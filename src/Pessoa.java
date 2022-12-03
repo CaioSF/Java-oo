@@ -1,4 +1,4 @@
-public abstract class Pessoa {
+public abstract class Pessoa implements IUsuario {
     private String cpf;
     private String nome;
     private String telefone;

@@ -8,4 +8,9 @@ public class Funcionario extends Pessoa {
     public void setSalario(Double salario) {
         this.salario = salario;
     }
+
+    @Override
+    public void autenticar() {
+        System.out.println("Usuário Autenticado! =)");
+    }
 }
