@@ -6,6 +6,10 @@ public class Cliente extends Pessoa  {
 
     private Collection<Endereco> enderecos = new ArrayList<Endereco>();
 
+    public void addEndereco(Endereco endereco) {
+        this.enderecos.add(endereco);
+    }
+
     public Boolean getVip() {
         return vip;
     }
@@ -14,12 +18,24 @@ public class Cliente extends Pessoa  {
         this.vip = vip;
     }
 
-    public void addEndereco(Endereco endereco) {
-        this.enderecos.add(endereco);
+    public Collection<Endereco> getEnderecos() {
+        return enderecos;
+    }
+
+    public void setEnderecos(Collection<Endereco> enderecos) {
+        this.enderecos = enderecos;
+    }
+
+    public void listarEnderecos() {
+        for (Endereco e: getEnderecos()) {
+            System.out.println("CEP: " + e.getCep() + ", Logradouro: " + e.getLogradouro() + ", Número: " + e.getNumero() + ", Complemento: " + e.getComplemento() +
+                    ", Cidade: " + e.getCidade() + ", UF: " + e.getUf());
+        }
     }
 
     @Override
-    public void autenticar() {
-        System.out.println("Usuário Autenticado! =)");
+    public boolean autenticar() {
+        return true;
     }
+
 }

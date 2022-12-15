@@ -19,8 +19,8 @@ public class Funcionario extends Pessoa {
     }
 
     @Override
-    public void autenticar() {
-        System.out.println("Usuário Autenticado! =)");
+    public boolean autenticar() {
+        return true;
     }
 
 }

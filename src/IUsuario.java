@@ -1,4 +1,3 @@
 public interface IUsuario {
-
-    public void autenticar();
+    public boolean autenticar();
 }
