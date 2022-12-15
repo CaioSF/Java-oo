@@ -6,9 +6,27 @@ public class Conta {
 
     private Cliente cliente;
 
+    private static int contador = 1;
+
+    private int numeroConta;
+    
     public Collection<Credito> creditos = new ArrayList<Credito>();
 
     public Collection<Debito> debitos = new ArrayList<Debito>();
+
+    public static int getContador() {
+        return contador;
+    }
+
+    public static void setContador(int contador) {
+        Conta.contador = contador;
+    }
+
+    public Conta (Cliente cliente) {
+        this.setNumeroConta(contador);
+        this.cliente = cliente;
+        contador += 1;
+    }
 
     public String getNumero() {
         return numero;
@@ -46,4 +64,11 @@ public class Conta {
         this.addDebito(debito);
     }
 
+    public int getNumeroConta() {
+        return numeroConta;
+    }
+
+    public void setNumeroConta(int numeroConta) {
+        this.numeroConta = numeroConta;
+    }
 }
