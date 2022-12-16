@@ -5,8 +5,14 @@ public class App {
         Cliente c = new Cliente();
 
         c.setNome("");
-        f.setNome("");
-        f.setCpf("");
-        f.setTelefone("");
+        f.setNome("Caio");
+        f.setCpf("11111111111");
+        f.setTelefone("323336633");
+        
+        
+        
+        
     }
+
+   
 }

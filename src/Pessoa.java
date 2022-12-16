@@ -26,4 +26,6 @@ public abstract class Pessoa implements IUsuario {
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
+
+    
 }

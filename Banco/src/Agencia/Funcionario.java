@@ -1,8 +1,15 @@
+package Agencia;
+
 import java.util.ArrayList;
 import java.util.Collection;
 
 public class Funcionario extends Pessoa {
-    private Double salario;
+    public Funcionario(String nome, String cpf, String telefone) {
+		super(nome, cpf, telefone);
+		// TODO Auto-generated constructor stub
+	}
+
+	private Double salario;
 
     private Collection<Cargo> cargos = new ArrayList<Cargo>();
 
@@ -22,6 +29,5 @@ public class Funcionario extends Pessoa {
     public boolean autenticar() {
         return true;
     }
-    
 
 }
